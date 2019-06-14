@@ -9,11 +9,23 @@
 
     <form>
       <input id="movieName" type="text">
-      <input type="button" value="Search">
+      <input type="button" value="Search" onclick="getMovies(movieName)">
 
       <div id="movieResults">
         <table>
+          <tr>
+            <th>Title</th>
+            <th>Year</th>
+            <th>Type</th>
+            <th>More Detail</th>
 
+          </tr>
+          <tr>
+            <td><p id="theTitle"></p></td>
+            <td><p id="theYear"></p></td>
+            <td><p id="theType"></p></td>
+            <td><input type="button" value="More Detail"></td>
+          </tr>
         </table>
       </div>
     </form>
